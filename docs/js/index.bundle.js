@@ -1,0 +1,1 @@
+!function(){"use strict";const e=document.querySelector("#mobileNavBtn"),t=document.querySelector("#mobileNavBlock");e.addEventListener("click",(()=>{e.classList.toggle("mobile-nav-btn--active"),t.classList.toggle("mobile-nav-block--active"),document.body.classList.toggle("overflow-hidden")}))}();

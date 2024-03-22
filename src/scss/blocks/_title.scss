@@ -1,0 +1,106 @@
+.title {
+  padding-top: 165px;
+  padding-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("./../../img/title/decor.png");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 846px;
+    height: 777px;
+    right: -255px;
+    top: -200px;
+    z-index: -1;
+  }
+}
+
+.title__wrapper {
+  display: flex;
+}
+
+.title__text {
+  line-height: 1.2;
+  max-width: 765px;
+  position: relative;
+  &::after {
+    @include titleBg() {
+      background-image: url("./../../img/title/04.png");
+      right: -80px;
+      top: 13%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.title__title {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 38px;
+}
+.title__subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+.title__promo {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 51px;
+}
+.title__form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+  max-width: max-content;
+  input {
+    padding: 25px 18px;
+    width: 295px;
+  }
+  button {
+    padding: 25px 18px;
+    border-radius: 0 10px 10px 0;
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+
+.title__img {
+  position: relative;
+  &::before {
+    @include titleBg() {
+      background-image: url("./../../img/title/03.png");
+      left: 180px;
+      top: -30px;
+      transform: translateY(-50%);
+    }
+  }
+  &::after {
+    @include titleBg() {
+      background-image: url("./../../img/title/02.png");
+      right: 0;
+      top: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.title__img-wrap {
+  position: relative;
+  &::after {
+    @include titleBg() {
+      background-image: url("./../../img/title/01.png");
+      right: 120px;
+      bottom: -20px;
+      transform: translateY(-50%);
+      width: 110px !important;
+      height: 110px !important;
+    }
+  }
+}

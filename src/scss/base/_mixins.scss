@@ -1,0 +1,29 @@
+@mixin mediaBg() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin titleBg() {
+  content: "";
+  position: absolute;
+  @content;
+  width: 90px;
+  height: 90px;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  transform: scale(0.8);
+}

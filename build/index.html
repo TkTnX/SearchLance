@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SearchLance</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="logo">
+						<h4 class="logo__text"><span>Search</span>Lance</h4>
+						<p class="logo__subtitle">Сервис поиска авто</p>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#!" class="header__link">
+									<img src="./img/icons/search.svg" alt="Поиск" />
+									<span>Поиск заказов</span></a
+								>
+							</li>
+							<li class="header__item">
+								<a href="#!" class="header__link">
+									<img src="./img/icons/notification.svg" alt="Колокольчик" />
+									<span>Уведомления о&#160;заказах</span></a
+								>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__btn btn-1" id="headerBtn">Личный кабинет</button>
+					<div class="userCabinet" id="userCabinet">
+						<h4 class="userCabinet__title">Личный кабинет</h4>
+						<form id="userCabinetForm" class="userCabinet__form">
+							<input type="text" placeholder="Имя" id="headerInputName" />
+							<input type="password" autocomplete="on" placeholder="Пароль" id="headerInputPassword" />
+							<input type="email" placeholder="Почта" id="headerInputEmail" />
+							<button class="btn-1" id="btn-form">Войти</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="title">
+				<div class="container">
+					<div class="title__wrapper">
+						<div class="title__text">
+							<h1 class="title__title">
+								Найди авто мечты по&#160;выгодной цене и&#160;купи первым!
+							</h1>
+							<p class="title__subtitle">Поиск по&#160;всем доскам объявлений</p>
+							<p class="title__promo">1 месяц доступа беплатно</p>
+
+							<form class="title__form">
+								<input placeholder="E-mail" type="email" />
+								<button class="btn-1">Получить доступ</button>
+							</form>
+						</div>
+
+						<div class="title__img">
+							<div class="title__img-wrap">
+								<picture>
+									<source srcset="./img/title/car.webp 1x, ./img/title/car@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/title/car.png 1x, ./img/title/car@2x.png 2x" type="image/png" />
+									<img src="./img/title/car.png" alt="Машина" />
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
