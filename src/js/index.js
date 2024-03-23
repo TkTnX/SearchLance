@@ -6,3 +6,6 @@ onClickPopup();
 
 import { contentLoaded } from "./modules/loader";
 contentLoaded();
+
+import { sortFunc } from "./modules/sort";
+sortFunc();

@@ -1,0 +1,146 @@
+<section class="params">
+  <div class="container">
+    <div class="params__wrapper">
+      <div class="params-category">
+        <div class="parms-category__top">
+          <p class="parms-category__rg">
+            <img src="./../../img/icons/geo.svg" alt="Geo" />
+            <span>Регион поиска</span>
+          </p>
+          <div class="params-category-top__btns">
+            <button
+              id="clearCategory"
+              type="button"
+              class="params-category-top__btn"
+            >
+              Сбросить <img src="./../../img/icons/x.svg" alt="Сбросить" />
+            </button>
+            <button
+              type="button"
+              id="showCategory"
+              class="params-category-top__btn"
+            >
+              Свернуть
+              <img id="arrowTop" src="./../../img/icons/arrow-top.svg" alt="Свернуть" />
+            </button>
+          </div>
+        </div>
+        <form class="params-category__form paramsForm--active">
+          <label class="params-category__label">
+            Марка
+            <select id="markaSelect">
+              <option value="" disabled selected hidden>Lada</option>
+              <option value="lada">Lada</option>
+              <option value="kia">Kia</option>
+              <option value="toyota">Toyota</option>
+              <option value="BMW">BMW</option>
+              <option value="Mercedes">Mercedes</option>
+            </select>
+          </label>
+          <label class="params-category__label">
+            Модель
+            <select id="modelSelect">
+              <option value="" disabled selected hidden>Vesta Sport</option>
+              <option value="vestaSport">Vesta Sport</option>
+              <option value="rio">Rio</option>
+              <option value="camry">Camry</option>
+              <option value="m5">m5</option>
+              <option value="Gclass">G-Класс</option>
+            </select>
+          </label>
+          <div class="params-category__label">
+            Тип
+            <div class="params-category__btns">
+              <button type="button" class="params-category__btn">Новый</button>
+              <button type="button" class="params-category__btn">Б/У</button>
+            </div>
+          </div>
+          <div class="params-category__label">
+            Пробег (км)
+            <div class="params-category__inputs">
+              <button type="button" class="params-category__inputs-btn">
+                Без пробега
+              </button>
+              <input type="number" id="probegInp" placeholder="70 000" />
+            </div>
+          </div>
+          <label class="params-category__label">
+            Объем двигателя, л
+            <select class="engineSelect" id="engineSelect">
+              <option value="" selected disabled hidden>2.0</option>
+              <option value="2">2.0</option>
+              <option value="3">3.0</option>
+              <option value="4">4.0</option>
+              <option value="5">5.0</option>
+            </select>
+          </label>
+          <label class="params-category__label">
+            Мощность двигателя (л.с)
+            <select class="moshnostEngine" id="moshnostEngine">
+              <option value="" disabled hidden selected>От</option>
+              <option value="100">100</option>
+              <option value="500">500</option>
+              <option value="700">700</option>
+              <option value="800">800</option>
+            </select>
+
+            <select class="moshnostEngine" id="moshnostDoEngine">
+              <option value="" disabled hidden selected>До</option>
+
+              <option value="100">100</option>
+              <option value="500">500</option>
+              <option value="700">700</option>
+              <option value="800">800</option>
+            </select>
+          </label>
+          <label class="params-category__label">
+            Трансмиссия
+            <select class="params-category__transmis" id="transmisSelect">
+              <option value="" disabled hidden selected>Автомат</option>
+              <option value="auto">Автомат</option>
+              <option value="mechanic">Механическая</option>
+              <option value="electro">Электрическая </option>
+            </select>
+          </label>
+          <div class="params-category__label">
+            Привод
+            <div class="params-category__btns3">
+              <button
+                type="button"
+                class="params-category__btn"
+                id="selectPrivod"
+              >
+                Передний
+              </button>
+              <button
+                type="button"
+                class="params-category__btn"
+                id="selectPrivod"
+              >
+                Задний
+              </button>
+
+              <button
+                type="button"
+                class="params-category__btn"
+                id="selectPrivod"
+              >
+                Полный
+              </button>
+            </div>
+          </div>
+          <button class="showPredl btn-1">Показать 5 404 предложения</button>
+        </form>
+      </div>
+      <div class="params__text">
+        <h2 class="params__title">Задай параметры авто и регион поиска</h2>
+        <p class="params__desc">
+          «Автокод» покажет авто со всех популярных досок объявлений:
+        </p>
+        <p class="params__popular">
+          <b>Drom.ru</b>, <b>Avito.ru</b>, <b>Auto.ru</b>, <b>Юла</b>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
