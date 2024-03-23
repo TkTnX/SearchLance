@@ -9,7 +9,6 @@ const userCabinetForm = document.querySelector("#userCabinetForm");
 export const onClickPopup = (event) => {
   event.preventDefault();
   userCabinet.classList.toggle("header-popup-open");
-  btnForm.textContent = "Успешный вход!";
 };
 
 headerBtn.addEventListener("click", onClickPopup);
@@ -22,5 +21,6 @@ btnForm.addEventListener("click", () => {
     headerBtn.textContent = headerInputName.value;
     userCabinet.classList.remove("header-popup-open");
     headerBtn.removeEventListener("click", onClickPopup);
+    btnForm.textContent = "Успешный вход!";
   }
 });
