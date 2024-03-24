@@ -1,0 +1,69 @@
+<section class="notifications">
+  <div class="container">
+    <div class="notifications__wrapper">
+      <img
+        class="notifications__wrapper-img"
+        src="./../../img/notifications/phone.png"
+        alt="SearchLance"
+      />
+
+      <div class="notifications__text">
+        <img
+          class="notifColocol"
+          srcset="./../../img/notifications/notif.svg"
+          src="./../../img/notifications/notif.svg"
+          alt="notification"
+        />
+        <h2 class="notifications__title">Подключи уведомления</h2>
+        <p class="notifications__desc">
+          Получай мгновенные сообщения о новых объявлениях в Телеграм или на
+          почту.
+        </p>
+
+        <div class="notifications-card">
+          <div class="notifications-card__notification">
+            <div class="notifications-card__colocol">
+              <img
+                src="./../../img/notifications/colocol.svg"
+                alt="Колокольчик"
+              />
+              <span>Получать уведомления</span>
+            </div>
+            <button
+              id="notificationsCheckbox"
+              class="notifications-card__checkbox"
+            >
+              <div
+                id="notificationsCheckboxBox"
+                class="notifications-card__checkbox-block"
+              ></div>
+            </button>
+          </div>
+          <div class="notifications-card__methods">
+            <button id="notifCardEmail" class="notifications-card__email">
+              <img src="./../../img/notifications/mail.svg" alt="Почта" />
+              <span>E-mail</span>
+            </button>
+            <button id="notifCardTelegram" class="notifications-card__telegram">
+              <img
+                src="./../../img/notifications/telegram.svg"
+                alt="Телеграм"
+              />
+              <span>Telegram</span>
+            </button>
+          </div>
+          <p class="notifications-card__text">
+            Привяжите свой Telegram
+            <a class="notifications-card__link" href="#header">в Профиле</a>
+          </p>
+          <select class="notifications-card__select">
+            <option value="instantly">Мгновенно</option>
+            <option value="14days">Раз в 14 дней</option>
+            <option value="30days">Раз в 30 дней</option>
+            <option value="perYear">Раз в год</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

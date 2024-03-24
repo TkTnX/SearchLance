@@ -9,3 +9,6 @@ contentLoaded();
 
 import { sortFunc } from "./modules/sort";
 sortFunc();
+
+import { notificationsFunc } from "./modules/notifications";
+notificationsFunc();

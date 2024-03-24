@@ -1,5 +1,5 @@
 .params {
-  margin-top: 155px;
+  margin-top: clamp(3.125rem, 0.67rem + 12.27vw, 9.875rem);
   overflow: hidden;
   padding-top: 20px;
 }
@@ -226,7 +226,7 @@
 .paramsForm--active {
   opacity: 1;
   padding: 28px 40px;
-  height: 522px;
+  height: 622px;
 
   @media (max-width: 555px) {
     height: 877px;
